@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Google Nexus Website Menu</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+								<li><a class="gn-icon gn-icon-article">Verify Novels</a></li>
+
+								<li>
+									<a class="gn-icon gn-icon-archive">Review Users</a>
+								</li>
+								<li><a class="gn-icon gn-icon-cog">Settings</a></li>
+
+								<li><a class="gn-icon gn-icon-help">Help</a></li>
+
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a class="codrops-icon codrops-icon-drop" href=""><span>Admin | Readswap</span></a></li>
+			</ul>
+			
+			<!--Table-->
+			<div class="component">
+				<table>
+					<thead>
+						<tr>
+							<th>Sample ID</th>
+							<th>Reading #1</th>
+							<th>Reading #2</th>
+							<th>Reading #3</th>
+							<th>Reading #4</th>
+							<th>Reading #5</th>
+							<th>Reading #6</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Sample #1</th>
+							<td>52</td>
+							<td>40</td>
+							<td>9</td>
+							<td>47</td>
+							<td>
+										<button class="btn btn-8 btn-8g">Accept</button>
+							</td>
+								<td>
+										<button class="btn btn-8 btn-8g">Reject</button>
+								</td>
+							</tr>
+						<tr>
+							<th>Sample #2</th>
+							<td>27</td>
+							<td>55</td>
+							<td>97</td>
+							<td>52</td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<th>Sample #3</th>
+							<td>36</td>
+							<td>68</td>
+							<td>89</td>
+							<td>78</td>
+							<td>60</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div><!-- /container -->
+
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		
+		<!--Table-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+		<script src="js/jquery.stickyheader.js"></script>
+
+		<!--Button-->
+		<script src="js/button.js" ></script>
+	</body>
+</html>
